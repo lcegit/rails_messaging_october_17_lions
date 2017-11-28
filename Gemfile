@@ -20,6 +20,18 @@ group :development do
   gem 'web-console', '~> 2.0'
 end
 
+group :development, :test do
+
+  gem 'factory_bot_rails'
+  gem 'pry-byebug'
+  gem 'pry-rails'
+  gem 'rspec-rails'
+  gem 'shoulda-matchers'
+  gem 'cucumber-rails', require: false
+  gem 'database_cleaner'
+
+end
+
 group :production do
   gem 'rails_12factor'
 end
