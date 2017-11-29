@@ -3,7 +3,7 @@ ruby '2.4.0'
 
 gem 'bootstrap-sass'
 gem 'chosen-rails'
-gem 'devise', '4.2.1' # git: 'https://github.com/plataformatec/devise'
+gem 'devise', '4.2.1'
 gem 'jbuilder', '~> 2.0'
 gem 'jquery-rails'
 gem 'mailboxer'
