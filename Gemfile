@@ -3,7 +3,7 @@ ruby '2.4.0'
 
 gem 'bootstrap-sass'
 gem 'chosen-rails'
-gem 'devise', '4.2.1' # git: 'https://github.com/plataformatec/devise'
+gem 'devise', '4.2.1'
 gem 'jbuilder', '~> 2.0'
 gem 'jquery-rails'
 gem 'mailboxer'
@@ -15,9 +15,21 @@ gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
 
 group :development do
-  gem 'pry-byebug'
   gem 'spring'
   gem 'web-console', '~> 2.0'
+end
+
+group :development, :test do
+
+  gem 'factory_bot_rails'
+  gem 'pry-byebug'
+  gem 'pry-rails'
+  gem 'rspec-rails'
+  gem 'shoulda-matchers'
+  gem 'cucumber-rails', require: false
+  gem 'database_cleaner'
+  gem 'coveralls', require: false
+
 end
 
 group :production do
