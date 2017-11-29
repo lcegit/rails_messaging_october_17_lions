@@ -2,7 +2,13 @@ language: ruby
 cache: bundler
 rvm:
   - 2.4.0
+services:
+  - postgresql
+before_script:
+  - bundle exec rails db:create db:migrate RAILS_ENV=test
 script:
+  - bundle exec rspec
+  - bundle exec cucumber
 deploy:
   provider: heroku
   api_key:
