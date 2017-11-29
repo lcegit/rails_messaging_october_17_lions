@@ -3,6 +3,7 @@ cache: bundler
 rvm:
   - 2.4.0
 script:
+  rails db:create db:migrate RAILS_ENV=test
 deploy:
   provider: heroku
   api_key:
