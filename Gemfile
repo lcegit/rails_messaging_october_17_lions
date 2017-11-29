@@ -15,7 +15,6 @@ gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
 
 group :development do
-  gem 'pry-byebug'
   gem 'spring'
   gem 'web-console', '~> 2.0'
 end
