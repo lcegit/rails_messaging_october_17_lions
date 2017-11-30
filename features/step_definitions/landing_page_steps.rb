@@ -10,7 +10,7 @@ When("I press the {string} button") do |link|
   click_link_or_button link
 end
 
-Then("I should be on the {string} page") do |path|
+Then("I am on the {string} page") do |path|
   if path == 'landing'
     expect(page.current_path).to eq root_path
   else
