@@ -10,15 +10,15 @@ Feature: Landing Page
   Scenario: Person visits the site and presses the Login button
     When I am on the landing page
     And I press the "Login" button
-    Then I should be on the login page
+    Then I should be on the "sign_in" page
 
   Scenario: Person visits the site and presses the Sign Up button
     When I am on the landing page
     And I press the "Sign up" button
-    Then I should be on the sign up page
+    Then I should be on the "sign_up" page
 
   Scenario: Person visits login page and presses the home button
     When I am on the landing page
     And I press the "Login" button
     And I press the "CA Mailboxer" button
-    Then I should be on the landing page
+    Then I should be on the "landing" page

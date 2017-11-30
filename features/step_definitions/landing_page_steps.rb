@@ -10,14 +10,10 @@ When("I press the {string} button") do |link|
   click_link_or_button link
 end
 
-Then("I should be on the login page") do
-  expect(page.current_path).to eq '/users/sign_in'
-end
-
-Then("I should be on the sign up page") do
-  expect(page.current_path).to eq '/users/sign_up'
-end
-
-Then("I should be on the landing page") do
-  expect(page.current_path).to eq root_path
+Then("I should be on the {string} page") do |path|
+  if path == 'landing'
+    expect(page.current_path).to eq root_path
+  else
+    expect(page.current_path).to eq "/users/#{path}"
+  end
 end
