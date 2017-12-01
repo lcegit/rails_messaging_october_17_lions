@@ -8,8 +8,8 @@ Feature: A user can sign up
     And I press the "Sign up" button
     Then I should be on the "sign_up" page
     When I enter the "Name" with "name"
-    And I fill in the "Email" with "sophie.sjoberg@gmail.com"
-    And I fill in the "Password" with my "olivolja"
+    And I fill in the "Email" with "jenny@random.com"
+    And I fill in the "Password" with my "password"
     And I enter "Password" confirmation with "password"
     And I press the "Create" button
     Then I should be on the users page
