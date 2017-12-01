@@ -8,7 +8,7 @@ Feature: Retrieve lost password
     And I press the "Login" button
     Then I should be on the "sign_in" page
     Given I press the "Forgot your password?" button
-    Then I should be on the "password" page
-    And I fill in the "Email" with "sophie.sjoberg@gmail.com"
+    Then I should be on the "password/new" page
+    And I fill in the "Email" with "jenny@random.com"
     Then I press the "Send me reset password instructions" button
-    And I should be on the "user_password" page
+    And I should be on the "password" page
